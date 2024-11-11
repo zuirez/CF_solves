@@ -20,6 +20,7 @@ void result(int ca, int cd)
     }
 }
 
+
 int main()
 {
     optimize();
