@@ -4,17 +4,30 @@ using namespace std;
 #define optimize() ios_base::sync_with_stdio(0);//cin.tie(0);cout.tie(0);
 #define endl '\n'
 
-int arr[10000];
-
 int main()
 {
     optimize();
 
-    int n;
-    cin>>n;
+    int y;
+    cin>>y;
 
-    for(int i=0; i<n; )
+    while(true)
     {
-        cout<<'a';
+        y++;
+        int temp = y;
+
+        set<int>s;
+
+        while(temp>0)
+        {
+            s.insert(temp%10);
+            temp=temp/10;
+        }
+
+        if(s.size()==4)
+        {
+            cout<<y;
+            break;
+        }
     }
 }
